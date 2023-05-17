@@ -32,7 +32,7 @@ It is also possible to define the credentials through command flags. If both are
 == Build
 [source,bash]
 ----
-git clone https://github.com/abraham-leal/ccloud-schema-exporter
+git clone https://github.com/MosheBlumbergX/ccloud-schema-exporter
 cd ccloud-schema-exporter
 go build ./cmd/ccloud-schema-exporter/ccloud-schema-exporter.go 
 ----

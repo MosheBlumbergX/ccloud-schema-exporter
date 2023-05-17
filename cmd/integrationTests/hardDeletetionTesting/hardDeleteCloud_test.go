@@ -5,15 +5,15 @@ package integration_deletion
 // Copyright 2020 Abraham Leal
 //
 
-
 import (
-	client "github.com/abraham-leal/ccloud-schema-exporter/cmd/internals"
-	"github.com/stretchr/testify/assert"
 	"log"
 	"os"
 	"reflect"
 	"testing"
 	"time"
+
+	client "github.com/MosheBlumbergX/ccloud-schema-exporter/cmd/internals"
+	"github.com/stretchr/testify/assert"
 )
 
 var testClientSrc *client.SchemaRegistryClient

@@ -7,11 +7,6 @@ package integration
 
 import (
 	"context"
-	client "github.com/abraham-leal/ccloud-schema-exporter/cmd/internals"
-	testingUtils "github.com/abraham-leal/ccloud-schema-exporter/cmd/testingUtils"
-	"github.com/stretchr/testify/assert"
-	"github.com/testcontainers/testcontainers-go"
-	"github.com/testcontainers/testcontainers-go/wait"
 	"io/ioutil"
 	"log"
 	"os"
@@ -19,6 +14,12 @@ import (
 	"reflect"
 	"testing"
 	"time"
+
+	client "github.com/MosheBlumbergX/ccloud-schema-exporter/cmd/internals"
+	testingUtils "github.com/MosheBlumbergX/ccloud-schema-exporter/cmd/testingUtils"
+	"github.com/stretchr/testify/assert"
+	"github.com/testcontainers/testcontainers-go"
+	"github.com/testcontainers/testcontainers-go/wait"
 )
 
 var testClientSrc *client.SchemaRegistryClient

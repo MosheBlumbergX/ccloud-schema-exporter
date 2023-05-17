@@ -8,14 +8,15 @@ package client
 import (
 	"encoding/json"
 	"fmt"
-	testingUtils "github.com/abraham-leal/ccloud-schema-exporter/cmd/testingUtils"
-	"github.com/stretchr/testify/assert"
-	"github.com/testcontainers/testcontainers-go"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"sync"
 	"testing"
+
+	testingUtils "github.com/MosheBlumbergX/ccloud-schema-exporter/cmd/testingUtils"
+	"github.com/stretchr/testify/assert"
+	"github.com/testcontainers/testcontainers-go"
 )
 
 var testClient *SchemaRegistryClient

@@ -7,12 +7,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/abraham-leal/ccloud-schema-exporter/cmd/internals"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"log"
 	"net/http"
 	"os"
 	"strings"
+
+	client "github.com/MosheBlumbergX/ccloud-schema-exporter/cmd/internals"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 var sampleDestObject = client.NewSampleCustomDestination()
@@ -96,7 +97,7 @@ func main() {
 			preflightWriteChecks(destClient, true)
 		}
 
-		schemaLoader := client.NewSchemaLoader(client.SchemaLoadType, destClient, client.PathToWrite , workingDir)
+		schemaLoader := client.NewSchemaLoader(client.SchemaLoadType, destClient, client.PathToWrite, workingDir)
 		schemaLoader.Run()
 
 		log.Println("-----------------------------------------------")
